@@ -11,7 +11,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Links */
@@ -81,10 +81,10 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
   background: none;
   cursor: pointer;
@@ -143,7 +143,7 @@ a:hover {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -165,8 +165,22 @@ a:hover {
 .header {
   padding-top: 30px;
   padding-bottom: 74px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("../../img/header/header-bg.jpg");
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../../img/header/header-bg.jpg");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(11.98%, #242b33),
+      color-stop(51.04%, rgba(45, 52, 60, 0.38)),
+      color-stop(92.19%, #242b33)
+    ),
+    url("../img/header/header-bg.jpg");
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url("../img/header/header-bg.jpg");
 }
 
 .header__block {
@@ -176,11 +190,11 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 @media screen and (max-width: 950px) {
   .header__block {
@@ -194,11 +208,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__top--mobile {
@@ -214,14 +228,14 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   row-gap: 60px;
   padding: 40px 0;
 }
@@ -231,11 +245,11 @@ a:hover {
 .header__top--mobile .nav__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   row-gap: 30px;
 }
 .header__top--mobile .header__top-btn {
@@ -265,11 +279,11 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__title__mouse {
@@ -296,11 +310,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 74px;
   font-size: 18px;
 }
@@ -308,8 +322,8 @@ a:hover {
   .header__footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     row-gap: 30px;
     font-size: 14px;
   }
@@ -320,8 +334,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 65px;
 }
 .header__footer_box .header__footer_text {
@@ -338,8 +352,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
 }
 
 /* Nav Icon */
@@ -356,11 +370,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav-icon {
@@ -379,10 +393,13 @@ a:hover {
   width: var(--width);
   height: var(--line-height);
   background-color: var(--color);
-  -webkit-transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
-  transition: top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  -webkit-transition: top var(--time) linear var(--time),
+    -webkit-transform var(--time) ease-in;
+  transition: top var(--time) linear var(--time),
+    -webkit-transform var(--time) ease-in;
   transition: transform var(--time) ease-in, top var(--time) linear var(--time);
-  transition: transform var(--time) ease-in, top var(--time) linear var(--time), -webkit-transform var(--time) ease-in;
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time),
+    -webkit-transform var(--time) ease-in;
 }
 
 .nav-icon::before {
@@ -400,20 +417,23 @@ a:hover {
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
   top: 0;
-  -webkit-transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
-  transition: top var(--time) linear, -webkit-transform var(--time) ease-in var(--time);
+  -webkit-transition: top var(--time) linear,
+    -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear,
+    -webkit-transform var(--time) ease-in var(--time);
   transition: top var(--time) linear, transform var(--time) ease-in var(--time);
-  transition: top var(--time) linear, transform var(--time) ease-in var(--time), -webkit-transform var(--time) ease-in var(--time);
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time),
+    -webkit-transform var(--time) ease-in var(--time);
 }
 
 .nav-icon.nav-icon--active::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .nav-icon.nav-icon--active::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .benifits {
@@ -425,7 +445,7 @@ a:hover {
   content: "II";
   left: calc(50% + 555px);
   -webkit-transform: translate(2%, 0);
-          transform: translate(2%, 0);
+  transform: translate(2%, 0);
   position: absolute;
   top: 0;
   line-height: 1.15;
@@ -447,8 +467,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 70px;
-     -moz-column-gap: 70px;
-          column-gap: 70px;
+  -moz-column-gap: 70px;
+  column-gap: 70px;
 }
 @media screen and (max-width: 950px) {
   .benifits__row {
@@ -497,7 +517,7 @@ a:hover {
   content: "III";
   right: 50%;
   -webkit-transform: translate(-73%, -36%);
-          transform: translate(-73%, -36%);
+  transform: translate(-73%, -36%);
   position: absolute;
   top: 0;
   line-height: 1.15;
@@ -527,7 +547,13 @@ a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 43, 51, 0)), to(#242b33));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(36, 43, 51, 0)),
+    to(#242b33)
+  );
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
 }
 .cards::after {
@@ -555,9 +581,9 @@ a:hover {
 
 .cards:hover .cards_img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: contrast(110%) brightness(1.2) saturate(1.2);
-          filter: contrast(110%) brightness(1.2) saturate(1.2);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 
 .cards__text {
@@ -578,8 +604,22 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), url("./../img/sta/sta-bg.jpg"), #c4c4c4;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), url("./../img/sta/sta-bg.jpg"), #c4c4c4;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(10.42%, #242b33),
+      color-stop(50.52%, rgba(36, 43, 51, 0)),
+      color-stop(90.1%, #242b33)
+    ),
+    url("./../img/sta/sta-bg.jpg"), #c4c4c4;
+  background: linear-gradient(
+      180deg,
+      #242b33 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    url("./../img/sta/sta-bg.jpg"), #c4c4c4;
 }
 @media screen and (max-width: 950px) {
   .cta {
@@ -701,7 +741,7 @@ a:hover {
   content: "IV";
   left: calc(50% + 555px);
   -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   position: absolute;
   top: 0;
   line-height: 1.15;
@@ -736,9 +776,9 @@ a:hover {
 
 .video__link:hover .video__icon {
   -webkit-transform: translate(-50%, -50%) scale(1.2);
-          transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
   -webkit-filter: saturate(1.5);
-          filter: saturate(1.5);
+  filter: saturate(1.5);
 }
 
 .video__icon {
@@ -746,7 +786,7 @@ a:hover {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 950px) {
   .video__icon {
@@ -763,7 +803,7 @@ a:hover {
   content: "V";
   left: calc(50% - 555px);
   -webkit-transform: translate(-55%, 32%);
-          transform: translate(-55%, 32%);
+  transform: translate(-55%, 32%);
   position: absolute;
   top: 0;
   line-height: 1.15;
@@ -800,48 +840,48 @@ a:hover {
   z-index: 9;
 }
 
-[class*=copyrights-pane] {
+[class*="copyrights-pane"] {
   /* display: none !important; */
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
 }
 
-.map:hover [class*=copyrights-pane] {
+.map:hover [class*="copyrights-pane"] {
   opacity: 1;
 }
 
 /* Создать свою карту */
-[class*=gototech] {
+[class*="gototech"] {
   display: none !important;
 }
 
-[class*=ground-pane] {
+[class*="ground-pane"] {
   -webkit-filter: grayscale(1) sepia(10%);
-          filter: grayscale(1) sepia(10%);
+  filter: grayscale(1) sepia(10%);
 }
 
 /* Baloon */
-[class*=balloon__layout],
-[class*=balloon__content] {
+[class*="balloon__layout"],
+[class*="balloon__content"] {
   background-color: #242b33 !important;
   color: #fff !important;
 }
 
-[class*=balloon__tail]::after {
+[class*="balloon__tail"]::after {
   background-color: #242b33 !important;
 }
 
-[class*=balloon_layout_panel] {
+[class*="balloon_layout_panel"] {
   background-color: #242b33 !important;
 }
 
-[class*=balloon__layout],
-[class*=balloon__content] a {
+[class*="balloon__layout"],
+[class*="balloon__content"] a {
   color: #d4c17f !important;
 }
 
-[class*=balloon__close-button] {
+[class*="balloon__close-button"] {
   background: url("./../img/map/cross.svg") 50% no-repeat !important;
   width: 15px !important;
   height: 15px !important;
@@ -871,8 +911,8 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media screen and (max-width: 950px) {
   .feedback__form {
@@ -927,9 +967,9 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 22px;
-     -moz-column-gap: 22px;
-          column-gap: 22px;
+  -moz-column-gap: 22px;
+  column-gap: 22px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
