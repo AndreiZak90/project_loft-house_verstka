@@ -1,0 +1,25 @@
+.appartems__title {
+  margin-bottom: 88px;
+
+  @include mediaTablet {
+    margin-bottom: 44px;
+  }
+}
+
+.appartems__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+
+  &::after {
+    content: "III";
+    right: 50%;
+    transform: translate(-73%, -36%);
+    @include decorNumber;
+  }
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
